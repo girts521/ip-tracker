@@ -1,25 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Header from './Header/Header'
+import Map from './Map/Map'
+import InfoPopUp from './InfoPopUp/InfoPopUp';
+
 function App() {
+const [inputText, setInputText] = useState<string | null>('')
+const [resData, setResData] = useState<any> (null)
+
+const getInputText = (text: string) => {
+ setInputText(text)
+}
+
+const getData = (data:any) => {
+  setResData(data)
+  console.log('data:', data)
+}
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>   
+<Header passText={getInputText} />
+<InfoPopUp data={resData} />
+<Map passData={getData} inputText={inputText!} />
+    </>
   );
 }
 

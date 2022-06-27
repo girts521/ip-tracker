@@ -1,0 +1,44 @@
+.container{
+    z-index: 9999;
+    background-color: white;
+    height: 130px;
+    position:absolute;
+    top: 23%;
+    right: 10%;
+    width: 80vw;
+    border-radius: 15px;
+
+
+
+    .infoContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        justify-content: space-around;
+       
+
+        .info{
+            // border: 1px solid black;
+            // margin: 7px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+    
+            h2{
+                padding: 10px;
+                color: gray;
+                font-size: 15px;
+            }
+
+            .data{
+                font-size: 23px;
+                font-weight: bold;
+            }
+        }
+    }
+}

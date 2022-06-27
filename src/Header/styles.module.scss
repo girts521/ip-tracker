@@ -1,0 +1,43 @@
+.Container {
+  height: 30vh;
+  width: 100vw;
+  background-image: url(../../../images/pattern-bg.png);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .heading {
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .inputWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    .input {
+      width: 80%;
+      height: 40px;
+      border: 1px solid transparent;
+      border-bottom-left-radius: 15px;
+      border-top-left-radius: 15px;
+      font-size: 20px;
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      width: 20%;
+      height: 45px;
+      background-color: black;
+      border: 1px solid transparent;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+}
