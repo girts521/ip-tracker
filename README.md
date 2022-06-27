@@ -1,4 +1,4 @@
-An ip tracker which shows your ip and location. Also you can enter a different ip address is domain name to see its location and information. 
+An ip tracker which shows your ip and location. Also you can enter a different ip address or domain name to see its location and information. 
 
 I used https://geo.ipify.org/ api to get the ip data and https://leafletjs.com/ to display a map. 
 
